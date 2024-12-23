@@ -94,6 +94,7 @@ _Tanenbaum_ will automatically register `.ml` or `.re` files in `lib/problems` w
 with `problem` -- e.g. `lib/problems/problem_2023_01.ml` or `lib/problems/problem_2023_01.re`.
 Once you've added a file of this form, you can run it from the CLI.
 
+
 For example, if we'd like to start working on day 1 of year 2023, _Tanenbaum_
 will automatically we can add this file:
 
@@ -130,6 +131,10 @@ module Part_2 = {
   let run = (input: string): result(string, string) => Ok(input);
 };
 ```
+
+> [!TIP]
+> You can organize your problems in subdirectories, e.g. `lib/problems/2023/problem_2023_01.ml`. However, the file name must still have the form `problem_{year}_{day}.{ml,re}`.
+
 
 > [!TIP]
 > It's also helpful to add a `.mli` or `.rei` file, which gives the compiler more
